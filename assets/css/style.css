@@ -4,6 +4,36 @@
   text-decoration: none;
 }
 
+.header-main {
+  background-color: #394054;
+  padding: 20px;
+  margin-top: -10px;
+}
+
+.header-username {
+  color: white;
+  margin-right: 8px;
+  margin-top: 20px;
+}
+
+.header-user {
+  display: flex;
+  justify-content: end;
+}
+
+.header-logo, .header-nav, .header-logins {
+  display: none;
+}
+
+.header-image {
+  height: 60px;
+}
+
+.menu-burger {
+  margin-bottom: -40px;
+  height: 20px;
+}
+
 footer {
   background-color: #394054;
   padding: 40px;
