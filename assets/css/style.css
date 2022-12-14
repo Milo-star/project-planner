@@ -4,4 +4,13 @@
   text-decoration: none;
 }
 
+footer {
+  background-color: #394054;
+  padding: 10vw;
+}
+footer .footer-paragraphe {
+  text-align: center;
+  color: white;
+}
+
 /*# sourceMappingURL=style.css.map */
