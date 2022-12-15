@@ -37,6 +37,11 @@
         display: none;
     }
 
+    .header-username{
+        display: flex;
+        justify-content: end;
+    }
+
     .header-logo, .header-nav, .header-logins{
         display: contents;
     }
@@ -50,5 +55,15 @@
     .nav-link{
         padding: 10px;
         color: white;
+    }
+
+    .header-logins{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header-login{
+        color: white;
+        margin: 10px;
     }
 }
