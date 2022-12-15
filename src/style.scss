@@ -1,6 +1,48 @@
+@import "partials/variables";
 @import "partials/reset";
 @import "partials/base";
 @import "partials/header";
+<<<<<<< HEAD
 @import "partials/tasks";
 @import "partials/variables";
+=======
+@import "partials/main";
+>>>>>>> dev
 @import "partials/footer";
+
+
+
+@media screen and (min-width: 1023px) {
+
+//----------------------HEADER--------------------------------------------//
+header {
+    height: 13.333vw;
+    display:flex;
+
+}
+//----------------------MAIN----------------------------------------------//
+.main-paragraphe {
+    
+    padding-left: 13.333vw;
+    margin-top: 7vw;
+    margin-right:12vw;
+    padding-right: 12vw;
+    padding-left:12vw;
+    margin-bottom:7vw;
+    
+}
+h1 {
+    padding-left: 12vw;
+    margin-bottom: 5vw;
+}
+//modifier "projet" en "project"
+.main-button {
+    margin-left: 12vw;
+    border: none;
+    color: #FFFF;
+    background-color: #1C1C1F;
+    font-size: 2vw;
+    font-weight: 700;
+}
+}
+//----------------------FOOTER--------------------------------------------//
