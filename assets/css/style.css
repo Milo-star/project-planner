@@ -45,7 +45,9 @@ button {
 .header-main {
   background-color: #394054;
   padding: 20px;
-  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header-username {
@@ -68,23 +70,29 @@ button {
 }
 
 .menu-burger {
-  margin-bottom: -40px;
   height: 20px;
 }
 
 @media screen and (min-width: 481px) {
+  .nav-link {
+    font-weight: bold;
+  }
+  .header-username {
+    font-weight: bold;
+  }
   .menu-burger {
     display: none;
   }
   .header-logo, .header-nav, .header-logins {
-    display: contents;
+    display: block;
+  }
+  .header-logins {
+    display: flex;
+    gap: 10px;
   }
   .nav-links {
     display: flex;
-    flex-direction: row;
-  }
-  .nav-link {
-    margin: 15px;
+    gap: 16px;
   }
 }
 .tasks {
@@ -192,7 +200,6 @@ h1 {
     flex-wrap: wrap;
   }
   .card {
-    height: 15vw;
     width: 30vw;
     max-width: 30vw;
   }

@@ -1,7 +1,10 @@
 .header-main{
     background-color: $secondary;
     padding: 20px;
-    margin-top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 
 }
 
@@ -26,12 +29,20 @@
 }
 
 .menu-burger{
-    margin-bottom: -40px;
     height: 20px;
 }
 
 
 @media screen and (min-width:481px) {
+
+
+    .nav-link{
+        font-weight: bold;
+    }
+
+    .header-username{
+        font-weight: bold;
+    }
 
     .menu-burger{
         display: none;
@@ -39,15 +50,17 @@
 
 
     .header-logo, .header-nav, .header-logins{
-        display: contents;
+        display: block;
+    }
+
+    .header-logins{
+        display: flex;
+        gap: 10px;
     }
 
     .nav-links{
         display: flex;
-        flex-direction: row;
+        gap: 16px;
     }
 
-    .nav-link{
-        margin: 15px;
-    }
 }
