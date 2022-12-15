@@ -41,8 +41,8 @@ h1 {
     font-size: 2vw;
     font-weight: 700;
     margin-bottom: 17vw;
+    cursor: pointer;
 }
-
 
 //------------------------MEDIA QUERIES-----------------------------//
 @media screen and (min-width: 1023px) {
@@ -77,5 +77,6 @@ h1 {
     background-color: #1C1C1F;
     font-size: 2vw;
     font-weight: 700;
+    cursor: pointer;
 }
 }
