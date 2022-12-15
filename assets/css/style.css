@@ -189,7 +189,7 @@ h1 {
 @media screen and (min-width: 481px) {
   .main-card {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
   }
   .card {
     height: 15vw;
