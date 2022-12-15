@@ -4,20 +4,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-
 }
 
 .header-username{
     color: white;
-    margin-right: 8px;
-    margin-top: 20px;
+    font-size: 18px;
+}
 
+.header-userinfos{
+    display: flex;
+    align-items: center;
 }
 
 .header-user{
     display: flex;
-    justify-content: end;
+    gap: 10px;
 }
 
 .header-logo, .header-nav, .header-logins{
@@ -35,13 +36,26 @@
 
 @media screen and (min-width:481px) {
 
+    .header-user{
+        justify-content: end;
+        align-items: center;
+        gap: .5rem;
+    }
+
 
     .nav-link{
         font-weight: bold;
+        font-size: 18px;
+    }
+
+    .header-userinfos{
+        display: unset;
+        text-align: end;
     }
 
     .header-username{
         font-weight: bold;
+
     }
 
     .menu-burger{
@@ -58,9 +72,14 @@
         gap: 10px;
     }
 
+    .header-login{
+        font-size: 14px;
+    }
+
     .nav-links{
         display: flex;
         gap: 16px;
+        cursor: pointer;
     }
 
 }
