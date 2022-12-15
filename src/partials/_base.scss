@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+
+body{
+    background-color: $primary;
+    color: #fff;
+    font-family: $fontStack;
+    min-height: 100%;
+}
+
+input, 
+select,
+textarea,
+button{
+    font-family: inherit;
+}
+
+.btn{
+    border: none;
+    padding: .6em .5em;
+    cursor: pointer;
+}
