@@ -1,0 +1,94 @@
+.tasks{
+    margin-top: 1.625rem;
+    margin: 0 auto;
+    max-width: 90rem;
+    width: 90%;
+    
+    .tasks-heading{
+        font-size: 1.875rem;
+    }
+}
+
+.tasks-menu{
+    display: flex;
+    gap: 1.43rem;
+    list-style: none;
+    margin-top: .75rem;
+
+    .tasks-menu-item{
+        font-weight: 500;
+    }
+}
+
+.tasks-kanban{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2.75rem;
+    margin-top: 2.125rem;
+
+    .tasks-kanban-list{
+        list-style: none;
+    }
+
+    .tasks-kanban-task {
+        background-color: $secondary;
+        border-radius: .5rem;
+        font-weight: 500;
+        padding: .9em .6em;
+
+        &:first-child{
+            margin-top: .75rem;
+        }
+
+        .tasks-kanban-task-overview{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .task-title{
+            font-weight: 600;
+        }
+
+        .task-description{
+            font-size: .875rem;
+            line-height: 1.45;
+            margin-top: .5rem;
+            margin-bottom: .5rem;
+        }
+
+        .task-footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .task-status{
+            color: $lightBlue;
+            padding: .9em 0;
+        }
+
+        .task-btn{
+            background-color: $lightBlue;
+            border-radius: .3125rem;
+            color: $primary;
+
+            &:hover{
+                color: $lightBlue;
+                background-color: $primary;
+            }
+        }
+    }
+
+    .tasks-kanban-btn{
+        background-color: transparent;
+        color: $lightBlue;
+        margin-top: 1rem;
+        font-size: 1rem;
+
+        &:hover{
+            color: $secondary;
+        }
+    }
+}
