@@ -176,34 +176,6 @@ button {
   color: #394054;
 }
 
-body {
-  background-color: #1C1C1F;
-}
-
-h1 {
-  color: white;
-  padding: 30px;
-}
-
-.card {
-  background-color: #B0C0D4;
-  padding: 20px;
-  margin: 20px;
-}
-.card .desc-card {
-  padding-top: 15px;
-}
-
-@media screen and (min-width: 481px) {
-  .main-card {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .card {
-    width: 30vw;
-    max-width: 30vw;
-  }
-}
 footer {
   background-color: #394054;
   padding: 40px;
@@ -213,10 +185,54 @@ footer .footer-paragraphe {
   color: white;
 }
 
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2vw;
+  line-height: 2.4vw;
+  color: white;
+  background-color: #1C1C1F;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.main-paragraphe {
+  padding-left: 13.333vw;
+  margin-top: 7vw;
+  margin-right: 12vw;
+  padding-right: 12vw;
+  padding-left: 12vw;
+  margin-bottom: 7vw;
+}
+
+h1 {
+  font-size: 4vw;
+  padding-left: 12vw;
+  margin-bottom: 5vw;
+}
+
+.main-button {
+  margin-left: 12vw;
+  border: none;
+  color: white;
+  background-color: #1C1C1F;
+  font-size: 2vw;
+  font-weight: 700;
+  margin-bottom: 17vw;
+  cursor: pointer;
+}
+
 @media screen and (min-width: 1023px) {
-  header {
-    height: 13.333vw;
-    display: flex;
+  body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    line-height: 2.4vw;
+    color: white;
+    background-color: #1C1C1F;
+    margin: 0;
+    padding: 0;
   }
   .main-paragraphe {
     padding-left: 13.333vw;
@@ -226,6 +242,10 @@ footer .footer-paragraphe {
     padding-left: 12vw;
     margin-bottom: 7vw;
   }
+  h1 {
+    padding-left: 12vw;
+    margin-bottom: 5vw;
+  }
   .main-button {
     margin-left: 12vw;
     border: none;
@@ -233,6 +253,7 @@ footer .footer-paragraphe {
     background-color: #1C1C1F;
     font-size: 2vw;
     font-weight: 700;
+    cursor: pointer;
   }
 }
 
