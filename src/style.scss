@@ -7,9 +7,7 @@
 @import "partials/footer";
 
 body{
-    
     font-family: 'Montserrat', sans-serif;
-    font-size: 2vw;
     line-height: 2.4vw;
     color: #FFFF;
     background-color: #1C1C1F;
@@ -21,63 +19,50 @@ body{
 }
 //----------------------MAIN----------------------------------------------//
 .main-paragraphe {
-    padding-left: 13.333vw;
+    font-size: 2vw;
     margin-top: 7vw;
     margin-right:12vw;
+    margin-bottom:2vw;
     padding-right: 12vw;
     padding-left:12vw;
-    margin-bottom:7vw;
 }
 h1 {
     font-size: 4vw;
     padding-left: 12vw;
-    margin-bottom: 5vw;
+    margin-bottom: 2vw;
 }
 
 .main-button {
-    margin-left: 12vw;
     border: none;
     color: #FFFF;
     background-color: #1C1C1F;
     font-size: 2vw;
-    font-weight: 700;
-    margin-bottom: 17vw;
+    font-weight: 700; 
+    margin-left: 12vw;
     cursor: pointer;
 }
 
 //------------------------MEDIA QUERIES-----------------------------//
 @media screen and (min-width: 1023px) {
 
-body{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    line-height: 2.4vw;
-    color: #FFFF;
-    background-color: #1C1C1F;
-    margin:0;
-    padding:0;
-}
-//----------------------MAIN----------------------------------------------//
 .main-paragraphe {
-    padding-left: 13.333vw;
     margin-top: 7vw;
     margin-right:12vw;
+    margin-bottom:5vw;
     padding-right: 12vw;
     padding-left:12vw;
-    margin-bottom:7vw;
 }
 h1 {
     padding-left: 12vw;
     margin-bottom: 5vw;
 }
-
 .main-button {
-    margin-left: 12vw;
     border: none;
     color: #FFFF;
     background-color: #1C1C1F;
     font-size: 2vw;
     font-weight: 700;
+    margin-left: 12vw;
     cursor: pointer;
 }
 }
