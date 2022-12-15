@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
 
 body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     background-color: $primary;
     color: #fff;
     font-family: $fontStack;
     min-height: 100%;
+}
+
+h3{
+    color: black;
+    font-size: 1.3rem;
 }
 
 input, 
