@@ -27,11 +27,6 @@ const projectCard = (project) => {
     card.appendChild(desc);
 }
 
-const displayProjects = () => {
-    if (!(projectContainer.children.length === 0)){
-        projectContainer.innerHTML = "";
-    }
-    projects.forEach((project) => {
-       projectContainer.appendChild(projectCard(project));
-    });
+const addProjectToPage = (projet) => {
+    projectContainer.appendChild(projectCard(project));
 }
