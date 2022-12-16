@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="assets/js/script.js"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Tomorrow - Accueil</title>
 </head>
@@ -19,7 +18,6 @@
                 </svg>
             </div>
     
-            <img src="assets/img/icon-hamburger.svg" alt="" srcset="" class="menu-burger">
             
             <nav class="header-nav">
                 <ul class="nav-links">
@@ -28,6 +26,8 @@
                     <li class="nav-link">Calendar</li>
                 </ul>
             </nav>
+
+            <img src="assets/img/icon-hamburger.svg" alt="" srcset="" class="menu-burger" id="menu">
     
             <!-- <div class="header-user">
                 <div class="header-userinfos">
@@ -79,7 +79,7 @@
                 <li class="tasks-menu-item task-view-switch" id="table-toggle">Table View</li>
                 <li class="tasks-menu-item">
                     <label for="filter">Filter</label>
-                    <select class="tasks-filter" name="Fiter" id="filter" disabled>
+                    <select class="tasks-filter" name="Fiter" id="filter">
                         <option value="default" selected>None</option>
                         <option value="todo">To-do</option>
                         <option value="doing">Doing</option>
@@ -88,7 +88,7 @@
                 </li>
                 <li class="tasks-menu-item">
                     <label for="sort">Sort</label>
-                    <select class="tasks-sort" name="sort" id="sort" disabled>
+                    <select class="tasks-sort" name="sort" id="sort">
                         <option value="default" selected>None</option>
                         <option value="urgent">Urgent</option>
                         <option value="name">Name</option>
@@ -294,5 +294,7 @@
     <footer>
         <p class="footer-paragraphe">Développé avec ❤️ pour BeCode</p>
     </footer>
+
+    <script src="assets/js/burger.js"></script>
 </body>
 </html>
