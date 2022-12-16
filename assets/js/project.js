@@ -1,4 +1,52 @@
+class Project{
+    name;
+    description;
+    tasks = [];
+    
+    constructor(name, description){
+        this.name = name;
+        this.description = description;
+    }
+
+    addTask(name, description, status, deadline){
+        let task = new Task(name, description, status, deadline);
+        this.tasks.push(task);
+    }
+
+    deleteTask(task) {
+        this.tasks.filter((item) => {
+            return item != task;
+        })
+    }
+
+    filterTasks(condition) {
+        return this.tasks.filter((task) => {
+            return task === condition;
+        });
+    }
+
+    sortTasks(condition) {
+        switch(condition){
+            case "time":
+                // To do
+                break;
+            
+            case "name":
+                // to do
+                break;
+
+            case "uregency":
+                // to do
+                break;
+        }
+    }
+}
+
 class Task{
+    name;
+    description;
+    status = "to-do";
+    deadline;
 
     constructor(name, description, status, deadline){
         this.name = name;
@@ -7,26 +55,9 @@ class Task{
         this.deadline = deadline;
     }
 
-    get getName(){
-        return this.name;
-    }
-
-    get description(){
-        return this.description;
-    }
-
-    get status(){
-        return this.status;
-    }
-
-    get deadline(){
-        return this.deadline;
-    }
-
     changeStatus(newStatus) {
         this.status = newStatus;
     }
 }
 
-let t = new Task("Lorem", "ipsum", "to-do", 5);
-console.log(t);
+export {Project};
