@@ -10,16 +10,22 @@ body{
     min-height: 100%;
 }
 
-h3{
-    color: black;
-    font-size: 1.3rem;
-}
+// h3{
+//     color: black;
+//     font-size: 1.3rem;
+// }
 
 input, 
 select,
 textarea,
 button{
     font-family: inherit;
+}
+
+section{
+    margin: 0 auto;
+    max-width: 90rem;
+    width: 90%;
 }
 
 .btn{
