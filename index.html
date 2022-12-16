@@ -82,7 +82,7 @@
                 <li class="tasks-menu-item task-view-switch" id="table-toggle">Table View</li>
                 <li class="tasks-menu-item">
                     <label for="filter">Filter</label>
-                    <select class="tasks-filter" name="Fiter" id="filter">
+                    <select class="tasks-filter" name="Fiter" id="filter" disabled>
                         <option value="default" selected>None</option>
                         <option value="todo">To-do</option>
                         <option value="doing">Doing</option>
@@ -91,7 +91,7 @@
                 </li>
                 <li class="tasks-menu-item">
                     <label for="sort">Sort</label>
-                    <select class="tasks-sort" name="sort" id="sort">
+                    <select class="tasks-sort" name="sort" id="sort" disabled>
                         <option value="default" selected>None</option>
                         <option value="urgent">Urgent</option>
                         <option value="name">Name</option>
@@ -113,9 +113,186 @@
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </p>
 
-        <h1>Projects</h1>
+                                <div class="task-footer">
+                                    <p class="task-status">
+                                        To-do
+                                    </p>
+                                    <div class="task-action">
+                                        <button class="task-status-btn task-btn btn">Change Status</button>
+                                        <button class="task-delete task-btn btn">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="tasks-kanban-btn btn" id="btn-todo">+ new</button>
+                </div>
+                <div class="tasks-kanban-doing">
+                    <h3 class="tasks-kanban-heading">Doing</h3>
+                    <ul class="tasks-kanban-list">
+                        <li class="tasks-kanban-listitem">
+                            <div class="task">
+                                <div class="task-overview">
+                                    <p class="task-title">Lorem ipsum</p>
+                                    <p class="task-duedate">due in 5 days</p>
+                                </div>
+                                <p class="task-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
 
-        <button class="main-button">Create a new projet +</button>
+                                <div class="task-footer">
+                                    <p class="task-status">
+                                        Doing
+                                    </p>
+                                    <div class="task-action">
+                                        <button class="task-status-btn task-btn btn">Change Status</button>
+                                        <button class="task-delete task-btn btn">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="tasks-kanban-btn btn" id="btn-doing">+ new</button>
+                </div>
+                <div class="tasks-kanban-done">
+                    <h3 class="tasks-kanban-heading">Done</h3>
+                    <ul class="tasks-kanban-list">
+                        <li class="tasks-kanban-listitem">
+                            <div class="task">
+                                <div class="task-overview">
+                                    <p class="task-title">Lorem ipsum</p>
+                                    <p class="task-duedate">due in 5 days</p>
+                                </div>
+                                <p class="task-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                                <div class="task-footer">
+                                    <p class="task-status">
+                                        Done
+                                    </p>
+                                    <div class="task-action">
+                                        <button class="task-status-btn task-btn btn">Change Status</button>
+                                        <button class="task-delete task-btn btn">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tasks-kanban-listitem">
+                            <div class="tasks-kanban-task task">
+                                <div class="task-overview">
+                                    <p class="task-title">Lorem ipsum</p>
+                                    <p class="task-duedate">due in 5 days</p>
+                                </div>
+                                <p class="task-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                                <div class="task-footer">
+                                    <p class="task-status">
+                                        Done
+                                    </p>
+                                    <div class="task-action">
+                                        <button class="task-status-btn task-btn btn">Change Status</button>
+                                        <button class="task-delete task-btn btn">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="tasks-kanban-listitem">
+                            <div class="tasks-kanban-task task">
+                                <div class="task-overview">
+                                    <p class="task-title">Lorem ipsum</p>
+                                    <p class="task-duedate">due in 5 days</p>
+                                </div>
+                                <p class="task-description">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </p>
+
+                                <div class="task-footer">
+                                    <p class="task-status">
+                                        Done
+                                    </p>
+                                    <div class="task-action">
+                                        <button class="task-status-btn task-btn btn">Change Status</button>
+                                        <button class="task-delete task-btn btn">Delete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="tasks-kanban-btn btn" id="btn-done">+ new</button>
+                </div>
+            </div>
+            <div class="tasks-table">
+                <!-- <ul class="tasks-table-list">
+                    <li class="tasks-table-listitem">
+                        <div class="task">
+                            <div class="task-overview">
+                                <p class="task-title">Lorem ipsum</p>
+                                <p class="task-duedate">due in 5 days</p>
+                            </div>
+                            <p class="task-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+
+                            <div class="task-footer">
+                                <p class="task-status">
+                                    Done
+                                </p>
+                                <div class="task-action">
+                                    <button class="task-status-btn task-btn btn">Change Status</button>
+                                    <button class="task-delete task-btn btn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tasks-table-listitem">
+                        <div class="task">
+                            <div class="task-overview">
+                                <p class="task-title">Lorem ipsum</p>
+                                <p class="task-duedate">due in 5 days</p>
+                            </div>
+                            <p class="task-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+
+                            <div class="task-footer">
+                                <p class="task-status">
+                                    Done
+                                </p>
+                                <div class="task-action">
+                                    <button class="task-status-btn task-btn btn">Change Status</button>
+                                    <button class="task-delete task-btn btn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="tasks-table-listitem">
+                        <div class="task">
+                            <div class="task-overview">
+                                <p class="task-title">Lorem ipsum</p>
+                                <p class="task-duedate">due in 5 days</p>
+                            </div>
+                            <p class="task-description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+
+                            <div class="task-footer">
+                                <p class="task-status">
+                                    Done
+                                </p>
+                                <div class="task-action">
+                                    <button class="task-status-btn task-btn btn">Change Status</button>
+                                    <button class="task-delete task-btn btn">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul> 
+                <button class="tasks-table-btn btn" id="btn-table">+ new</button> -->
+            </div>
+        </section>
     </main>
     <footer>
         <p class="footer-paragraphe">Développé avec ❤️ pour BeCode</p>
