@@ -2,17 +2,35 @@ body{
     background-color: $primary;
 }
 
-h1{
-    color: white;
-    padding: 30px;
+.main-card{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 90px;
 }
 
 .card{
     background-color: $lightBlue;
     padding: 20px;
-    margin: 20px;
+    border-radius: .5rem;
+    color: $primary;
+    cursor: pointer;
+    // margin: 20px;
 
     .desc-card{
-        padding-top: 10px;
+        padding-top: 15px;    }
+}
+
+@media screen and (min-width:620px){
+    .main-card{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: unset;
+        justify-content: space-between;
+    }
+
+    .card{
+        width: 32%;
+        max-width: 40rem;
     }
 }

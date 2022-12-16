@@ -1,20 +1,30 @@
 .header-main{
     background-color: $secondary;
-    padding: 20px;
-    margin-top: -10px;
+}
 
+.header-container{
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 90rem;
+    width: 90%;
 }
 
 .header-username{
     color: white;
-    margin-right: 8px;
-    margin-top: 20px;
+    font-size: 18px;
+}
 
+.header-userinfos{
+    display: flex;
+    align-items: center;
 }
 
 .header-user{
     display: flex;
-    justify-content: end;
+    gap: 10px;
 }
 
 .header-logo, .header-nav, .header-logins{
@@ -26,6 +36,56 @@
 }
 
 .menu-burger{
-    margin-bottom: -40px;
     height: 20px;
+}
+
+
+@media screen and (min-width:620px) {
+
+    .header-user{
+        justify-content: end;
+        align-items: center;
+        gap: .5rem;
+    }
+
+
+    .nav-link{
+        font-weight: bold;
+        font-size: 18px;
+    }
+
+    .header-userinfos{
+        display: unset;
+        text-align: end;
+    }
+
+    .header-username{
+        font-weight: bold;
+
+    }
+
+    .menu-burger{
+        display: none;
+    }
+
+
+    .header-logo, .header-nav, .header-logins{
+        display: block;
+    }
+
+    .header-logins{
+        display: flex;
+        gap: 10px;
+    }
+
+    .header-login{
+        font-size: 14px;
+    }
+
+    .nav-links{
+        display: flex;
+        gap: 16px;
+        cursor: pointer;
+    }
+
 }
